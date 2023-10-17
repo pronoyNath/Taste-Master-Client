@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="bg-[#D1D0D0]">
             <div className="max-w-6xl mx-auto font-poppins">
                 <Header></Header>
                 <Outlet></Outlet>

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "brandname": "The Coca-Cola Company",
+        "brandName": "The Coca-Cola Company",
         "image": "https://i.ibb.co/dkw63SX/cock.jpg",
         "advertisements": [
             "https://i.ibb.co/wW9b6yV/coc1.jpg",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "brandname": "McDonald's",
+        "brandName": "McDonald's",
         "image": "https://i.ibb.co/8gW4v6B/mc.jpg",
         "advertisements": [
             "https://i.ibb.co/Qng4XLW/mac1.jpg",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "brandname": "Starbucks",
+        "brandName": "Starbucks",
         "image": "https://i.ibb.co/94B38LL/starbuck-1.png",
         "advertisements": [
             "https://i.ibb.co/Vghzzvf/Starbucks1.jpg",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "brandname": "PepsiCo",
+        "brandName": "PepsiCo",
         "image": "https://i.ibb.co/c1Rmpww/PepsiCo.jpg",
         "advertisements": [
             "https://i.ibb.co/8cGTBxR/pep1.jpg",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "brandname": "Red Bull",
+        "brandName": "Red Bull",
         "image": "https://i.ibb.co/X8VnQMZ/unnamed.jpg",
         "advertisements": [
             "https://i.ibb.co/2gGGXVB/red1.png",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "brandname": "Lay's Potato Chips",
+        "brandName": "Lay's Potato Chips",
         "image": "https://i.ibb.co/V36nJsg/lays-1.png",
         "advertisements": [
             "https://i.ibb.co/smKpJXY/lay1.jpg",
