@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BrandCard from './BrandCard/BrandCard';
 
 const Brands = ({brands}) => {
