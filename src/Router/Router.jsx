@@ -8,6 +8,7 @@ import ProductDetails from "../components/Pages/ProductDetails/ProductDetails";
 import AddCart from "../components/Pages/AddCart/AddCart";
 import UpdateProduct from "../components/Pages/UpdateProduct/UpdateProduct";
 import Register from "../components/Pages/Register/Register";
+import PriveteRoute from "./PrivateRouter/PrivateRouter";
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/addproducts',
-                element: <AddProducts></AddProducts>
+                element: <PriveteRoute><AddProducts></AddProducts></PriveteRoute>
             },
             {
                 path: '/brand/:id',
