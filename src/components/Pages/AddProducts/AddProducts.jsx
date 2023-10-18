@@ -32,6 +32,7 @@ const AddProducts = () => {
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
+                    form.reset();
                 }
             })
 
@@ -49,7 +50,7 @@ const AddProducts = () => {
                     </div>
                     <div className="w-1/2">
                         <label htmlFor="">Brand Name</label>  <br />
-                        {/* <select className="input input-bordered w-full" name='brandName' placeholder="Brand Name" /> */}
+                        
                         <select name="brandName" id="brandName" className="input input-bordered w-full" required>
                             <option value="" >Select a Brand</option>
                             <option value="The Coca-Cola Company">The Coca-Cola Company</option>
@@ -57,7 +58,7 @@ const AddProducts = () => {
                             <option value="Starbucks">Starbucks</option>
                             <option value="PepsiCo">PepsiCo</option>
                             <option value="Red Bull">Red Bull</option>
-                            <option value="Lay's Potato Chips">Lay's Potato Chips</option>
+                            <option value="Nestlé">Nestlé</option>
                         </select>
 
 
