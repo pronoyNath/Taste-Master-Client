@@ -10,8 +10,6 @@ import UpdateProduct from "../components/Pages/UpdateProduct/UpdateProduct";
 import Register from "../components/Pages/Register/Register";
 import PriveteRoute from "./PrivateRouter/PrivateRouter";
 import ErrorPage from "../components/Pages/ErrorPage/ErrorPage";
-import Reviews from "../components/Home/Reviews/Reviews";
-import ParticleView from "../components/Home/BestSell/BestSell";
 
 
 const router = createBrowserRouter([
@@ -38,10 +36,6 @@ const router = createBrowserRouter([
                 path: '/details/:id',
                 element: <PriveteRoute><ProductDetails></ProductDetails></PriveteRoute>,
                 loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
-            },
-            {
-                path:'/particle',
-                element: <ParticleView></ParticleView>
             },
             {
                 path: '/cart',
