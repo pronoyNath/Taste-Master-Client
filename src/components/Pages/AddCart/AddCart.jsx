@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import CartCard from './CartCard/CartCard';
 
 const AddCart = () => {
-    const cartList = useLoaderData();
-    console.log(cartList);
+    const loadedCartList = useLoaderData();
+    // console.log(cartList);
+
+    const [cartList,setCartList] = useState(loadedCartList);
     return (
         <div>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid grid-cols-3 gap-5 py-10'>
             {
-                cartList.map(cart=><CartCard key={cart._id} cart={cart}></CartCard>)
+                cartList?.map(cart=><CartCard 
+                    key={cart._id}
+                     cart={cart}
+                     cartList={cartList}
+                     setCartList={setCartList}
+                     ></CartCard>)
             }
         </div>
         </div>
