@@ -9,12 +9,14 @@ import AddCart from "../components/Pages/AddCart/AddCart";
 import UpdateProduct from "../components/Pages/UpdateProduct/UpdateProduct";
 import Register from "../components/Pages/Register/Register";
 import PriveteRoute from "./PrivateRouter/PrivateRouter";
+import ErrorPage from "../components/Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children:[
             {
                 path: '/',
