@@ -17,35 +17,35 @@ const router = createBrowserRouter([
         path: '/',
         element: <MainLayout></MainLayout>,
         errorElement: <ErrorPage></ErrorPage>,
-        children:[
+        children: [
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()=>fetch('/brands.json')
+                loader: () => fetch('/brands.json')
             },
             {
-                path:'/addproducts',
+                path: '/addproducts',
                 element: <PriveteRoute><AddProducts></AddProducts></PriveteRoute>
             },
             {
                 path: '/brand/:id',
                 element: <BrandDetails></BrandDetails>,
-                loader:()=>fetch('/brands.json')
+                loader: () => fetch('/brands.json')
             },
             {
                 path: '/details/:id',
                 element: <PriveteRoute><ProductDetails></ProductDetails></PriveteRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
+                loader: ({ params }) => fetch(`https://server-side-sandy.vercel.app/details/${params.id}`)
             },
             {
                 path: '/cart',
-                element:<PriveteRoute><AddCart></AddCart></PriveteRoute>,
-                loader: ()=>fetch('http://localhost:5000/cart')
+                element: <PriveteRoute><AddCart></AddCart></PriveteRoute>,
+                loader: () => fetch('https://server-side-sandy.vercel.app/cart')
             },
             {
                 path: "/update/:id",
                 element: <PriveteRoute><UpdateProduct></UpdateProduct></PriveteRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
+                loader: ({ params }) => fetch(`https://server-side-sandy.vercel.app/details/${params.id}`)
             },
             {
                 path: '/login',

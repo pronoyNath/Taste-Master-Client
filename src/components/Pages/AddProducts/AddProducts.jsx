@@ -15,7 +15,7 @@ const AddProducts = () => {
         const newProduct = { productName, brandName, type, price, shortDescription, rating, image };
         console.log(newProduct);
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://server-side-sandy.vercel.app/products', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -46,11 +46,11 @@ const AddProducts = () => {
                 <div className='md:flex justify-center gap-5'>
                     <div className="md:w-1/2">
                         <label htmlFor="">Product Name</label> <br />
-                        <input className="input input-bordered w-full" name='productName' placeholder="Product Name" required/>
+                        <input className="input input-bordered w-full" name='productName' placeholder="Product Name" required />
                     </div>
                     <div className="md:w-1/2">
                         <label htmlFor="">Brand Name</label>  <br />
-                        
+
                         <select name="brandName" id="brandName" className="input input-bordered w-full" required>
                             <option value="" >Select a Brand</option>
                             <option value="The Coca-Cola Company">The Coca-Cola Company</option>
@@ -68,11 +68,11 @@ const AddProducts = () => {
                 <div className='md:flex justify-center gap-5'>
                     <div className="md:w-1/2">
                         <label htmlFor="">Type</label> <br />
-                        <input className="input input-bordered w-full" name='type' placeholder="Type" required/>
+                        <input className="input input-bordered w-full" name='type' placeholder="Type" required />
                     </div>
                     <div className="md:w-1/2">
                         <label htmlFor="">Price</label>  <br />
-                        <input className="input input-bordered w-full" name='price' placeholder="Price" required/>
+                        <input className="input input-bordered w-full" name='price' placeholder="Price" required />
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@ const AddProducts = () => {
 
                 <div className="w-full">
                     <label htmlFor="">Photo URL</label> <br />
-                    <input className="input input-bordered w-full" name='img' placeholder="Photo URL" required/>
+                    <input className="input input-bordered w-full" name='img' placeholder="Photo URL" required />
                 </div>
                 <input className='btn bg-yellow-900 text-white w-full' type="submit" value="Add Product" />
             </form>

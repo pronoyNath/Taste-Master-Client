@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 const UpdateProduct = () => {
     const product = useLoaderData();
-    const {_id, productName, brandName, type, price, shortDescription, rating, image } = product;
+    const { _id, productName, brandName, type, price, shortDescription, rating, image } = product;
     console.log(product);
 
     const handleUpdate = (e) => {
@@ -19,25 +19,25 @@ const UpdateProduct = () => {
         const updateProduct = { productName, brandName, type, price, shortDescription, rating, image };
         console.log(updateProduct);
 
-        fetch(`http://localhost:5000/details/${_id}`,{
+        fetch(`https://server-side-sandy.vercel.app/details/${_id}`, {
             method: "PUT",
-            headers:{
+            headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(updateProduct)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data);
-            if(data.modifiedCount>0){
-                Swal.fire({
-                    title: 'success!!!',
-                    text: 'Product updated successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                  })
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'success!!!',
+                        text: 'Product updated successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
 
     }
 
@@ -49,11 +49,11 @@ const UpdateProduct = () => {
                 <div className='md:flex justify-center gap-5'>
                     <div className="md:w-1/2">
                         <label htmlFor="">Product Name</label> <br />
-                        <input className="input input-bordered w-full" name='productName' placeholder="Product Name" defaultValue={productName} required/>
+                        <input className="input input-bordered w-full" name='productName' placeholder="Product Name" defaultValue={productName} required />
                     </div>
                     <div className="md:w-1/2">
                         <label htmlFor="">Brand Name</label>  <br />
-                        
+
                         <select name="brandName" id="brandName" className="input input-bordered w-full" defaultValue={brandName} required>
                             <option value="" >Select a Brand</option>
                             <option value="The Coca-Cola Company">The Coca-Cola Company</option>
@@ -71,18 +71,18 @@ const UpdateProduct = () => {
                 <div className='md:flex justify-center gap-5'>
                     <div className="md:w-1/2">
                         <label htmlFor="">Type</label> <br />
-                        <input className="input input-bordered w-full" name='type' placeholder="Type" defaultValue={type} required/>
+                        <input className="input input-bordered w-full" name='type' placeholder="Type" defaultValue={type} required />
                     </div>
                     <div className="md:w-1/2">
                         <label htmlFor="">Price</label>  <br />
-                        <input className="input input-bordered w-full" name='price' placeholder="Price" defaultValue={price} required/>
+                        <input className="input input-bordered w-full" name='price' placeholder="Price" defaultValue={price} required />
                     </div>
                 </div>
 
                 <div className='md:flex justify-center gap-5'>
                     <div className="md:w-1/2">
                         <label htmlFor="">Short Description</label> <br />
-                        <input className="input input-bordered w-full" name='shortDescription'  defaultValue={shortDescription} required placeholder="Short Description" />
+                        <input className="input input-bordered w-full" name='shortDescription' defaultValue={shortDescription} required placeholder="Short Description" />
                     </div>
                     <div className="md:w-1/2">
                         <label htmlFor="rating">Rating</label><br />
@@ -101,7 +101,7 @@ const UpdateProduct = () => {
 
                 <div className="w-full">
                     <label htmlFor="">Photo URL</label> <br />
-                    <input className="input input-bordered w-full" name='img' placeholder="Photo URL" defaultValue={image} required/>
+                    <input className="input input-bordered w-full" name='img' placeholder="Photo URL" defaultValue={image} required />
                 </div>
                 <input className='btn bg-yellow-900 text-white w-full' type="submit" value="Update Product" />
             </form>

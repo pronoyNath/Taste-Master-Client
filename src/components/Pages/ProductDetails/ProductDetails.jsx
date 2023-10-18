@@ -7,9 +7,9 @@ const ProductDetails = () => {
 
     const handleCart = () => {
         const newCart = { productName, brandName, type, price, shortDescription, rating, image };
-        
-        
-        fetch('http://localhost:5000/cart', {
+
+
+        fetch('https://server-side-sandy.vercel.app/cart', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

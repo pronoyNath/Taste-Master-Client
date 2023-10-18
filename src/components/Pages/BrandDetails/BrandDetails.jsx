@@ -20,7 +20,7 @@ const BrandDetails = () => {
     }, [id, brands])
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://server-side-sandy.vercel.app/products')
             .then(res => res.json())
             .then(data => setLoadedProducts(data));
     }, [])
@@ -38,12 +38,12 @@ const BrandDetails = () => {
             </div>
 
             <h3 className='py-7 text-4xl font-bold text-yellow-900 text-center font-garamond'>Available Products</h3>
-            
-            { commonProducts.length>0 ? 
+
+            {commonProducts.length > 0 ?
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
-                {
-                    commonProducts.map((commonProduct,idx) =><ProductCard key={idx} commonProduct={commonProduct}></ProductCard>)
-                } 
+                    {
+                        commonProducts.map((commonProduct, idx) => <ProductCard key={idx} commonProduct={commonProduct}></ProductCard>)
+                    }
                 </div>
                 :
                 <img src="https://i.ibb.co/ZRQBp10/no-product-found-removebg-preview.png" className="mx-auto py-5" alt="" />
