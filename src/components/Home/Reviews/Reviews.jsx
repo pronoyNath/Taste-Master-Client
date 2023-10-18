@@ -15,7 +15,7 @@ const Reviews = () => {
 
     return (
         <div className='mt-10 mb-20'>
-            <h3 className='py-7 text-4xl font-bold text-yellow-900 text-center font-garamond'>Reviews of our Customers</h3>
+            <h3 className='py-7 text-3xl md:text-4xl font-bold text-yellow-900 text-center font-garamond'>Reviews of our Customers</h3>
             <AwesomeSlider className='custom-slider'>
                 {reviews.map((userReview) => (
                     <div key={userReview.id} className='review-slide'>

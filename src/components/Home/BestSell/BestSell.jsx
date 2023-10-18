@@ -23,7 +23,7 @@ const photos = [
 
 export default function BestSell() {
   return <div className="py-10">
-    <h3 className='py-7 mb-5 text-4xl font-bold text-yellow-900 text-center font-garamond'>Best Selling Products Of The Month</h3>
+    <h3 className='py-7 mb-5 text-2xl md:text-4xl font-bold text-yellow-900 text-center font-garamond'>Best Selling Products Of The Month</h3>
     <PhotoAlbum layout="rows" photos={photos} />
   </div>
 }

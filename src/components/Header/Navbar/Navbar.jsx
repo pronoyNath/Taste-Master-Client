@@ -60,8 +60,8 @@ const Navbar = () => {
                     </div>
                     <Link to={'/'} >
                         <div className="flex items-center gap-2">
-                        <img src="https://i.ibb.co/1bvwgTH/Taste-Logo-2.png" className="w-[100px] h-[80px]" alt="" />
-                        <h3 className="normal-case font-garamond text-base md:text-3xl text-amber-900 font-semibold">Taste Masters Hub</h3>
+                        <img src="https://i.ibb.co/1bvwgTH/Taste-Logo-2.png" className="w-[120px] h-[60px] md:w-[100px] md:h-[80px] mb-4 md:mb-0" alt="" />
+                        <h3 className="normal-case font-garamond text-2xl lg:text-3xl text-amber-900 font-semibold hidden md:block">Taste Masters Hub</h3>
                         </div>
                         
                         </Link>
