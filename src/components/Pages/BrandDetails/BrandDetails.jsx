@@ -40,7 +40,7 @@ const BrandDetails = () => {
             <h3 className='py-7 text-4xl font-bold text-yellow-900 text-center font-garamond'>Available Products</h3>
             
             { commonProducts.length>0 ? 
-                <div className="grid grid-cols-3 gap-5 py-10">
+                <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 {
                     commonProducts.map((commonProduct,idx) =><ProductCard key={idx} commonProduct={commonProduct}></ProductCard>)
                 } 

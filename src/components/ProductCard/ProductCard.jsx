@@ -7,11 +7,11 @@ const ProductCard = ({commonProduct}) => {
     console.log(image);
     return (
         <div>
-            <div className="card card-compact w-96 h-[800px] bg-base-100 shadow-xl">
+            <div className="card card-compact mx-auto w-96 h-[800px] bg-base-100 shadow-xl">
                 <figure className='py-5'><img src={image} alt="" className='h-[400px] w-full object-cover mx-auto' /></figure>
                 <div className="card-body">
-                    <h2 className="card-title text-xl"><span className=' text-violet-600'>Brand Name:</span> {brandName}</h2>
-                    <h2 className="card-title text-md font-medium"><span className='text-pink-400'>Product Name:</span> {productName}</h2>
+                    <h2 className="card-title text-base md:text-xl"><span className=' text-violet-600'>Brand Name:</span> {brandName}</h2>
+                    <h2 className="card-title text-base md:text-md font-medium"><span className='text-pink-400'>Product Name:</span> {productName}</h2>
                     <p className=' text-black font-poppins font-semibold'><span className='font-semibold text-sky-800 text-lg'>Rating: </span>{rating}/5</p>
                     <p className=' text-black font-poppins font-semibold'><span className='font-semibold text-sky-800 text-lg'>Type: </span>{type}</p>
                     <p className=' text-black font-poppins font-semibold'><span className='font-semibold text-sky-800 text-lg'>Price:</span> {price}</p>
