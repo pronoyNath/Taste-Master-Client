@@ -10,7 +10,7 @@ const PriveteRoute = ({ children }) => {
 
     if (loading) {
         return <div className="flex justify-center my-24">
-            <span className=" loading loading-spinner text-warning w-[100px]"></span>
+            <span className=" loading loading-spinner text-yellow-900 w-[100px]"></span>
         </div>
     }
 

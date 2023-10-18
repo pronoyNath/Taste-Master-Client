@@ -32,17 +32,17 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <ProductDetails></ProductDetails>,
+                element: <PriveteRoute><ProductDetails></ProductDetails></PriveteRoute>,
                 loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
             },
             {
                 path: '/cart',
-                element:<AddCart></AddCart>,
+                element:<PriveteRoute><AddCart></AddCart></PriveteRoute>,
                 loader: ()=>fetch('http://localhost:5000/cart')
             },
             {
                 path: "/update/:id",
-                element: <UpdateProduct></UpdateProduct>,
+                element: <PriveteRoute><UpdateProduct></UpdateProduct></PriveteRoute>,
                 loader: ({params})=>fetch(`http://localhost:5000/details/${params.id}`)
             },
             {
