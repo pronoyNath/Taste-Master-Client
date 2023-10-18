@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -104,6 +105,7 @@ const CartCard = ({ cart,cartList,setCartList }) => {
                     >
                         Delete
                     </button>
+                    
                     <button
                         className="block w-full select-none rounded-lg bg-green-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 my-2 disabled:shadow-none"
                         type="button"

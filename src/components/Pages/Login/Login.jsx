@@ -131,7 +131,7 @@ const Login = () => {
         <div data-aos="zoom-in" className=" py-10">
 
 
-            <div className="w-full max-w-sm p-4 drop-shadow-2xl  bg-white border border-gray-200 sm:p-6 md:p-8 dark:bg-violet-800 dark:border-gray-700 mx-auto">
+            <div className="w-full max-w-sm p-4 drop-shadow-2xl  bg-white border border-gray-200 border-none sm:p-6 md:p-8 dark:bg-yellow-900 dark:border-gray-700 mx-auto">
                 <form onSubmit={handleLogin} className="space-y-6" action="#">
                     <h5 className="text-xl font-medium text-gray-900 dark:text-white text-center">Login to our platform</h5>
                     <div>
@@ -154,7 +154,7 @@ const Login = () => {
 
                     <button type="submit" className="w-full text-black font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-300 dark:hover:bg-yellow-500 ">Login your account</button>
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                        Not registered? <Link to={'/register'} href="#" className="text-blue-700 hover:underline dark:text-blue-500 text-xl">Create account</Link>
+                        Not registered? <Link to={'/register'} href="#" className=" text-yellow-500 text-xl">Create account</Link>
                     </div>
                 </form>
             </div>
