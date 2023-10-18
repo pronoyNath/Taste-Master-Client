@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "authorImage": "https://i.ibb.co/VV9cfN0/Ellipse1.jpg",
+      "name": "Ayesha Rahman",
+      "location": "Dhaka",
+      "rating": 4.5,
+      "review": "I absolutely love the Lay's Potato Chips from my local store. They are the perfect snack for a cozy evening at home."
+    },
+    {
+      "id": 2,
+      "authorImage": "https://i.ibb.co/nQHFbN0/Ellipse2.jpg",
+      "name": "Sara Khan",
+      "location": "Chittagong",
+      "rating": 4.2,
+      "review": "McDonald's has the best chicken burgers in Chittagong. The McChicken is my favorite go-to meal."
+    },
+    {
+      "id": 3,
+      "authorImage": "https://i.ibb.co/5TrMZzN/Ellipse3.jpg",
+      "name": "Farida Ahmed",
+      "location": "Sylhet",
+      "rating": 4.8,
+      "review": "I'm a coffee enthusiast, and Starbucks in Sylhet never disappoints. Their Caramel Macchiato is a dream come true."
+    },
+    {
+      "id": 4,
+      "authorImage": "https://i.ibb.co/wC03YVj/Ellipse4.jpg",
+      "name": "Tahmina Khanam",
+      "location": "Khulna",
+      "rating": 4.4,
+      "review": "PepsiCo's range of drinks is a hit in Khulna. I can't get enough of Pepsi and Mountain Dew on a hot day."
+    },
+    {
+      "id": 5,
+      "authorImage": "https://i.ibb.co/nQHFbN0/Ellipse2.jpg",
+      "name": "Nusrat Jahan",
+      "location": "Rajshahi",
+      "rating": 4.7,
+      "review": "The Coca-Cola Company never goes out of style. A chilled Coca-Cola is my ultimate refreshment."
+    },
+    {
+      "id": 6,
+      "authorImage": "https://i.ibb.co/wC03YVj/Ellipse4.jpg",
+      "name": "Sanjida Rahman",
+      "location": "Barisal",
+      "rating": 4.6,
+      "review": "Nestlé's Crunch Bar is a delightful treat, and I always keep one in my bag for a quick energy boost."
+    }
+  ]
+  
