@@ -40,15 +40,15 @@ const AddProducts = () => {
 
     return (
         <div className='bg-[#F4F3F0] p-24 mb-10'>
-            <h3 className='text-3xl font-extrabold mb-10 text-center'>Add a Product</h3>
+            <h3 className='text-2xl lg:text-3xl font-extrabold mb-10 text-center'>Add a Product</h3>
 
             <form onSubmit={handleAddProduct} className='space-y-10'>
-                <div className='flex justify-center gap-5'>
-                    <div className="w-1/2">
+                <div className='md:flex justify-center gap-5'>
+                    <div className="md:w-1/2">
                         <label htmlFor="">Product Name</label> <br />
                         <input className="input input-bordered w-full" name='productName' placeholder="Product Name" required/>
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <label htmlFor="">Brand Name</label>  <br />
                         
                         <select name="brandName" id="brandName" className="input input-bordered w-full" required>
@@ -65,23 +65,23 @@ const AddProducts = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-center gap-5'>
-                    <div className="w-1/2">
+                <div className='md:flex justify-center gap-5'>
+                    <div className="md:w-1/2">
                         <label htmlFor="">Type</label> <br />
                         <input className="input input-bordered w-full" name='type' placeholder="Type" required/>
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <label htmlFor="">Price</label>  <br />
                         <input className="input input-bordered w-full" name='price' placeholder="Price" required/>
                     </div>
                 </div>
 
-                <div className='flex justify-center gap-5'>
-                    <div className="w-1/2">
+                <div className='md:flex justify-center gap-5'>
+                    <div className="md:w-1/2">
                         <label htmlFor="">Short Description</label> <br />
                         <input className="input input-bordered w-full" name='shortDescription' required placeholder="Short Description" />
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <label htmlFor="rating">Rating</label><br />
                         <select className="input input-bordered w-full" name="rating" id="rating" required>
                             <option value="">Select a Rating</option>
