@@ -1,11 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
-const Navbar = () => {
-    const {user,logOut} = useContext(AuthContext);
 
-    const handleLogOut =()=>{
+const Navbar = ({theme,handleTheme}) => {
+    const { user, logOut } = useContext(AuthContext);
+
+    // const handleTheme = () => {
+    //     setTheme(!theme);
+    // }
+
+    const handleLogOut = () => {
         logOut()
     }
 
@@ -60,11 +66,11 @@ const Navbar = () => {
                     </div>
                     <Link to={'/'} >
                         <div className="flex items-center gap-2">
-                        <img src="https://i.ibb.co/1bvwgTH/Taste-Logo-2.png" className="w-[120px] h-[60px] md:w-[100px] md:h-[80px] mb-4 md:mb-0" alt="" />
-                        <h3 className="normal-case font-garamond text-2xl lg:text-3xl text-amber-900 font-semibold hidden md:block">Taste Masters Hub</h3>
+                            <img src="https://i.ibb.co/1bvwgTH/Taste-Logo-2.png" className="w-[100px] h-[60px] md:w-[100px] md:h-[80px] mb-4 md:mb-0" alt="" />
+                            <h3 className="normal-case font-garamond text-xl lg:text-3xl text-amber-900 font-semibold hidden md:block">Taste Masters Hub</h3>
                         </div>
-                        
-                        </Link>
+
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-lg">
@@ -73,32 +79,41 @@ const Navbar = () => {
 
                     </ul>
                 </div>
+               
+                <div onClick={handleTheme} className=" mr-4 md:mr-0 bg-yellow-200 p-1 rounded-lg"> <div>Theme:</div>
+                <div className=''>
+                    {
+                        theme ? <BsFillMoonFill></BsFillMoonFill> :
+                            <BsFillSunFill></BsFillSunFill>
+                    }
+                </div>
+            </div>
+
                 <div className="navbar-end">
-                    {/* <div> */}
                     <div className="mr-1 text-xs">
                         <p>{user?.displayName}</p>
                         <p className="hidden lg:block">{user?.email}</p>
                     </div>
-                   <div>
-                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
-                        <div className="w-10 rounded-full">
-                            <img src={user ? 
-                            user?.photoURL ? user?.photoURL : "https://i.ibb.co/bghqWpR/user.png" 
-                            : "https://i.ibb.co/bghqWpR/user.png"
-                                 } />
-                        </div>
-                    </label>
-                   </div>
-                    {/* </div> */}
+                    <div>
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                            <div className="w-10 rounded-full">
+                                <img src={user ?
+                                    user?.photoURL ? user?.photoURL : "https://i.ibb.co/bghqWpR/user.png"
+                                    : "https://i.ibb.co/bghqWpR/user.png"
+                                } />
+                            </div>
+                        </label>
+
+                    </div>
+
                     {
-                        user ? <Link onClick={handleLogOut} className="py-2 px-6 text-white  rounded-md bg-amber-900">Logout</Link> :
-                        <Link to={'/login'} className="py-2 px-6 text-white  rounded-md bg-amber-900">login</Link>
+                        user ? <Link onClick={handleLogOut} className="px-3 py-2 md:py-2 md:px-6 text-white  rounded-md bg-amber-900">Logout</Link> :
+                            <Link to={'/login'} className="py-2 px-6 text-white  rounded-md bg-amber-900">login</Link>
                     }
-                    
+
                 </div>
             </div>
         </div>
     );
 };
-
 export default Navbar;

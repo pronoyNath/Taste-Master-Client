@@ -7,6 +7,8 @@ import BestSell from './BestSell/BestSell';
 
 const Home = () => {
     const brands = useLoaderData();
+   
+
     return (
         <div>
             <Banner></Banner>
