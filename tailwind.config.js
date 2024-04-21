@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        poppins : "'Poppins', sans-serif",
-        garamond: "'EB Garamond', serif"
-      }
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        'orange': '#fe9b60',
+        'dark': '#2d2724',
+        'lite': '#fe9b60',
+      },
     },
   },
   plugins: [require("daisyui")],
