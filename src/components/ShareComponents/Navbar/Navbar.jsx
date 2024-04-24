@@ -41,13 +41,13 @@ const Nav = ({ theme, handleTheme }) => {
     <header className="max-w-screen-xl mx-auto md:px-8  relative md:z-20 text-white pt-2">
       <nav className="w-full flex items-center h-[68px] justify-between px-2 py-4 md:py-2" aria-label="Global">
         <div className="flex relative gap-3 items-center lg:flex-1">
-          <div className="flex absolute -left-10 justify-center items-center">
+          <div className="flex absolute md:-left-10 justify-center items-center">
             <Player
               autoplay
               loop
               src={logo}
               speed={0.6}
-              className='w-[80px] pt-6'
+              className='w-[50px] md:w-[80px] pt-6'
             >
             </Player>
           </div>

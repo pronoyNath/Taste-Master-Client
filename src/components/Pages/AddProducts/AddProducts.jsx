@@ -53,7 +53,7 @@ const AddProducts = () => {
                 <div className="relative">
                     <WaterDropGrid />
                     <div className="absolute top-20 right-0 ">
-                    <h3 className='font-semibold  text-2xl lg:text-6xl text-orange mb-5 text-right animate__animated animate__bounceInRight animate__slow'>Add a Product</h3>
+                    <h3 className='font-semibold  text-4xl lg:text-6xl text-orange mb-5 text-right animate__animated animate__bounceInRight animate__slow'>Add a Product</h3>
                     <p className="font-semibold  text-[#ffca28] text-5xl animate__animated animate__bounceInRight animate__slow">For Any Brand <br /> <span className="text-[#f72f43] ml-52 animate__animated animate__bounceInRight animate__slower">Related Product</span></p>
                     </div>
                 </div>

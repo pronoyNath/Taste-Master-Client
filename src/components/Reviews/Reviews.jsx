@@ -6,43 +6,56 @@ import ReviewCard from './ReviewCard';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 10], [0.4, 16]);
-  
-    useEffect(() => {
-        fetch('/reviews.json')
-            .then((res) => res.json())
-            .then((data) => setReviews(data));
-    }, []);
-   
+  const [reviews, setReviews] = useState([]);
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 10], [0.5, 16]);
 
-    return (
-        <div className='mt-20 mb-2 pt-5'>
-            <h3 className='py-7 mb-10 text-6xl md:text-6xl font-bold text-orange text-center font-garamond'>Reviews of our Customers</h3>
+  useEffect(() => {
+    fetch('/reviews.json')
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
+  const isMobileOrTablet = window.innerWidth <= 768;
+
+  return (
+    <div className='mt-20 mb-2 pt-5'>
+      <h3 className='py-7 mb-10 text-4xl md:text-6xl font-bold text-orange text-center font-garamond'>Reviews of our Customers</h3>
+      {
+        !isMobileOrTablet ?
+          <motion.div
+            className="container"
+            style={{
+              scale
+            }}
+          >
             <motion.div
-        className="container"
-        style={{
-          scale
-        }}
-      >
-        <motion.div
-          className="item"
-          style={{
-            scaleY: scrollYProgress
-          }}
-        />
-        <AwesomeSlider className='custom-slider'>
-                {reviews.map((userReview) => (
-                    <div key={userReview.id} style={{ backgroundColor: "#0a0909" }} className='review-slide'>
-                        <ReviewCard userReview={userReview} />
-                    </div>
-                ))}
+              className="item"
+              style={{
+                scaleY: scrollYProgress
+              }}
+            />
+            <AwesomeSlider className='custom-slider'>
+              {reviews.map((userReview) => (
+                <div key={userReview.id} style={{ backgroundColor: "#0a0909" }} className='review-slide'>
+                  <ReviewCard userReview={userReview} />
+                </div>
+              ))}
             </AwesomeSlider>
-      </motion.div>
-            
-        </div>
-    );
+          </motion.div>
+          :
+          <AwesomeSlider className='custom-slider'>
+            {reviews.map((userReview) => (
+              <div key={userReview.id} style={{ backgroundColor: "#0a0909" }} className='review-slide'>
+                <ReviewCard userReview={userReview} />
+              </div>
+            ))}
+          </AwesomeSlider>
+      }
+
+
+
+    </div>
+  );
 };
 
 export default Reviews;

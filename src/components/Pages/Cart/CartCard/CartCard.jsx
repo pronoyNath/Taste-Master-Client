@@ -40,11 +40,11 @@ const CartCard = ({ cart, cartList, setCartList }) => {
     return (
         <div>
 
-            <li className="flex flex-col py-10 sm:flex-row sm:justify-between px-20  transition-all duration-300 ease-in-out">
-                <div className="flex w-full space-x-2 sm:space-x-4 group/nath " >
+            <li className="flex flex-col py-10 sm:flex-row sm:justify-between px-10 lg:px-20  transition-all duration-300 ease-in-out">
+                <div className="flex flex-col md:flex-row w-full space-x-2 sm:space-x-4 group/nath " >
                     <img className="group-hover/nath:scale-125 transition-all duration-500 ease-in-out group-hover/nath:rotate-12 group-hover/nath:mr-7 flex-shrink-0 object-cover h-32 border-transparent rounded outline-none sm:w-32 sm:h-32 " src={image} alt="" />
                     <div className="flex flex-col justify-between w-full pb-4 " >
-                        <div className="md:flex justify-between w-full pb-2 space-x-2" >
+                        <div className="lg:flex justify-between w-full pb-2 space-x-2" >
                             <div className="space-y-1" >
                                 <h3 className="text-lg font-semibold text-orange sm:pr-8">{brandName}</h3>
                                 <p className="text-base text-gray-200">Product Name: {productName}</p>
@@ -53,7 +53,7 @@ const CartCard = ({ cart, cartList, setCartList }) => {
                                 {/* <p className="text-base text-gray-400">Total Days: {totalDays}</p> */}
                             </div>
                             <div className="text-right" >
-                                <div className="md:flex text-[#ffca28] hover:text-[#ffd965] divide-x text-xl" >
+                                <div className="md:flex text-[#ffca28] hover:text-[#ffd965] lg:divide-x text-xl" >
                                     <Link to={"/fun"}>
                                         <button type="button" className="flex items-center px-2 py-1 pl-0 space-x-1">
                                         <FaMoneyCheckAlt />

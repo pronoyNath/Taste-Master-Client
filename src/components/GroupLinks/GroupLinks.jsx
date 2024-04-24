@@ -14,8 +14,8 @@ import { useAnimate } from "framer-motion";
 
 export const GroupLinks = () => {
   return (
-    <div className="bg-neutral-50 px-20 py-12">
-      <h3 className="text-black py-10 text-center text-6xl font-bold">Our Partner Companies</h3>
+    <div className="bg-neutral-50 px-5 md:px-10 lg:px-20 py-12">
+      <h3 className="text-black py-10 text-center text-4xl md:text-6xl font-bold">Our Partner Companies</h3>
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />
       </div>

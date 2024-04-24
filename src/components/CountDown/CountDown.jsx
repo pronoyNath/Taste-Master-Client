@@ -47,7 +47,7 @@ const CountDown = () => {
 
   return (
     <div className="p-4 text-white py-20">
-        <h3 className="font-bold text-center text-orange text-6xl mb-20">Next Offer Comming</h3>
+        <h3 className="font-bold text-center text-orange text-4xl md:text-6xl mb-20">Next Offer Comming</h3>
       <div className="w-full  flex items-center text-white">
         <CountdownItem num={remaining.days} text="days" />
         <CountdownItem num={remaining.hours} text="hours" />

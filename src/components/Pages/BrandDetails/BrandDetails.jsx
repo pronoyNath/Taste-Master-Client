@@ -44,10 +44,10 @@ const BrandDetails = () => {
             <BrandCarousel product={product} />
             <div className="-mt-96">
 
-                <h3 className='py-7 text-6xl font-bold text-orange text-center font-garamond'>Available Products</h3>
+                <h3 className='py-7 text-4xl lg:text-6xl font-bold text-orange text-center font-garamond'>Available Products</h3>
 
                 {commonProducts.length > 0 ?
-                    <div className="grid grid-col-1 md:grid-cols-2  gap-20 py-20">
+                    <div className="grid grid-col-1 lg:grid-cols-2  gap-20 py-20">
                         {
                             commonProducts.map((commonProduct, idx) => <ProductCard key={idx} commonProduct={commonProduct}></ProductCard>)
                         }

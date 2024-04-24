@@ -5,7 +5,7 @@ import logo from '../../assets/animation/riding.json'
 
 const Footer = () => {
     return (
-        <footer className="footer text-white p-10  justify-evenly items-center text-2xl">
+        <footer className="footer text-white p-10  justify-evenly items-center text-lg lg:text-2xl">
             <Link to="/">
                 <nav>
                     {/* <img src="https://i.ibb.co/1bvwgTH/Taste-Logo-2.png" className="w-[200px] h-full" alt="" /> */}
@@ -14,7 +14,7 @@ const Footer = () => {
                         loop
                         src={logo}
                         speed={0.6}
-                        className='w-[300px]'
+                        className='lg:w-[300px]'
                     >
                     </Player>
                 </nav>

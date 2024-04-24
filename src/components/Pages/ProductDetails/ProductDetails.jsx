@@ -39,7 +39,7 @@ const ProductDetails = () => {
 
     return (
         <div className=" mx-auto  flex flex-col items-center justify-center md:flex-row py-20">
-            <div className="group relative sm:w-[350px]"> <img className="scale-105  h-[350px] w-[400px] transform rounded-lg bg-black/70 object-cover object-center" src={image} alt="card navigate ui" /></div>
+            <div className="group relative sm:w-[350px]"> <img className="scale-105 h-[300px] w-[300px]  md:h-[350px] md:w-[400px] transform rounded-lg bg-black/70 object-cover object-center" src={image} alt="card navigate ui" /></div>
 
 
             <motion.div ref={constraintsRef}> <motion.div

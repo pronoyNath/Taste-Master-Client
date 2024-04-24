@@ -3,18 +3,18 @@ import React from 'react';
 const ReviewCard = ({ userReview }) => {
     const { authorImage, name, location, review } = userReview;
     return (
-        <div className=" relative flex w-full max-w-[56rem] items-center justify-center rounded-xl  text-white shadow-none">
+        <div className=" relative flex w-full lg:max-w-[56rem] items-center lg:justify-center rounded-xl  text-white shadow-none">
             <div className="flex-1  relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-white bg-transparent shadow-none rounded-xl bg-clip-border">
                 <img
                     src={authorImage}
                     alt="tania andrew"
-                    className="relative inline-block rounded-full h-[400px] w-[300px] object-cover object-center"
+                    className="relative inline-block mx-auto rounded-full h-[150px] w-[150px] lg:h-[400px] lg:w-[300px] object-cover lg:object-center"
                 />
             </div>
             <div className="flex-1  p-0 mb-6">
                 <div className="flex w-full flex-col gap-0.5">
                     <div className="flex items-center justify-between">
-                        <h5 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        <h5 className="block font-sans text-lg md:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                             {name}
                         </h5>
                         <div className="flex items-center gap-0 5">
@@ -85,11 +85,11 @@ const ReviewCard = ({ userReview }) => {
                             </svg>
                         </div>
                     </div>
-                    <p className="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                    <p className="block font-sans text-sm lg:text-base antialiased font-light leading-relaxed text-blue-gray-900">
                         {location}
                     </p>
                 </div>
-                <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                <p className="block font-sans text-sm lg:text-base antialiased font-light leading-relaxed text-inherit">
                      {review}
                 </p>
             </div>

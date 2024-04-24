@@ -9,13 +9,13 @@ const Banner = ({ scrollToAvailable }) => {
         console.log("olksjke");
     }
     return (
-        <div className="flex relative justify-center overflow-hidden h-[400px] mx-auto w-full ">
-            <div className='flex flex-1 md:flex-none items-center'>
+        <div className="flex flex-col lg:flex-row relative justify-center overflow-hidden h-full lg:h-[400px] mx-auto w-full ">
+            <div className='hidden md:flex flex-1 md:flex-none items-center '>
                 <div className='absolute md:relative ml-3'>
                     <h1 className="text-lg md:text-7xl italic font-extrabold animate__animated animate__backInUp animate__slow">
                         Select Any Brand<span className="text-orange block ml-52 ">Any Food</span>
                     </h1>
-                    <div className="flex justify-end items-center animate__animated animate__backInRight animate__delay-2s ">
+                    <div className=" flex justify-end items-center animate__animated animate__backInRight animate__delay-2s ">
                         {/* <Button onClick={scrollToAvailable} text={'Adopt'} /> */}
                         {/* <button>hello</button> */}
                        <Button btnText={"Go To Shop"} onClick={scrollToAvailable}/>
