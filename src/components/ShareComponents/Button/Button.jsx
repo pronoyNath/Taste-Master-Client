@@ -2,11 +2,12 @@ import { useRef, useState } from "react";
 import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { CiShoppingCart } from "react-icons/ci";
+import { FaHome } from "react-icons/fa";
 
-const Button = ({btnText,onClick}) => {
+const Button = ({btnText,onClick,homeERR}) => {
   return (
     <div className="grid mt-2  place-content-center  p-4">
-      <EncryptButton btnText={btnText} onClick={onClick}/>
+      <EncryptButton btnText={btnText} onClick={onClick} homeERR={homeERR}/>
     </div>
   );
 };
@@ -17,7 +18,7 @@ const SHUFFLE_TIME = 50;
 
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
-const EncryptButton = ({btnText,onClick}) => {
+const EncryptButton = ({btnText,onClick,homeERR}) => {
   const intervalRef = useRef(null);
 
   const [text, setText] = useState(btnText);
@@ -68,7 +69,7 @@ const EncryptButton = ({btnText,onClick}) => {
       className="group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-neutral-700 px-4 py-2 font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-indigo-300"
     >
       <div className="relative text-xl z-10 flex items-center gap-2">
-      <CiShoppingCart />
+      {homeERR ? <FaHome /> : <CiShoppingCart />}
         <span>{text}</span>
       </div>
       <motion.span

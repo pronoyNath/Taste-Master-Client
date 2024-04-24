@@ -2,6 +2,7 @@
 import BrandCard from './BrandCard/BrandCard';
 
 const Brands = ({brands}) => {
+    
     return (
         <div id='brands' className='py-10 mt-32'>
             <h3 className='my-10 text-6xl font-bold text-orange text-center font-garamond'>Brand Names</h3>

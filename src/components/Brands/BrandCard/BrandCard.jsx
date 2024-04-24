@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useRef } from 'react';
 import {
     motion,
     useMotionTemplate,
@@ -7,11 +8,22 @@ import {
 } from "framer-motion";
 import { FiMousePointer } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { IoMoveSharp } from "react-icons/io5";
 
 const Example = ({ brand }) => {
+    const constraintsRef = useRef(null)
+
     return (
         <div className="grid w-full place-content-center px-4 py-12 text-slate-900">
-            <TiltCard brand={brand} />
+            
+                <motion.div ref={constraintsRef}>
+                    <motion.div
+                        drag
+                        dragConstraints={constraintsRef}
+                    >
+                        <TiltCard brand={brand} />
+                    </motion.div>
+                </motion.div>
         </div>
     );
 };
@@ -105,19 +117,26 @@ const TiltCard = ({ brand }) => {
                         <div className="card-body">
                             <h2 className="text-lg lg:text-2xl text-yellow-950 font-bold text-center">{brandName}</h2>
                         </div>
-                        <FiMousePointer
-                            style={{
+                        <div className="flex">
+                            <FiMousePointer
+                                style={{
+                                    transform: "translateZ(75px)",
+                                }}
+                                className="mx-auto text-4xl text-orange"
+                            />
+                            <IoMoveSharp style={{
                                 transform: "translateZ(75px)",
                             }}
-                            className="mx-auto text-4xl text-orange"
-                        />
+                                className="mx-auto text-4xl text-orange" />
+                        </div>
+
                         <p
                             style={{
                                 transform: "translateZ(50px)",
                             }}
                             className="text-center text-2xl font-bold text-orange"
                         >
-                            HOVER ME
+                            HOVER ME / MOVE
                         </p>
                     </div>
                 </Link>

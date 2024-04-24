@@ -1,0 +1,215 @@
+[
+    {
+      
+      "productName": "pepsi cola",
+      "brandName": "PepsiCo",
+      "type": "cold drink",
+      "price": "1200",
+      "shortDescription": "good taste",
+      "rating": "3",
+      "image": "https://i.ibb.co/1QL30RK/pep2.jpg"
+    },
+    {
+      
+      "productName": "Coca-Cola Zero Sugar",
+      "brandName": "The Coca-Cola Company",
+      "type": "Beverage",
+      "price": "3.49$",
+      "shortDescription": "Coca-Cola Zero Sugar offers the same great taste with zero calories. Perfect for a guilt-free refreshment.",
+      "rating": "4",
+      "image": "https://i.ibb.co/rfWTB4Z/ccard1.png"
+    },
+    {
+      
+      "productName": "Coca-Cola Classic",
+      "brandName": "PepsiCo",
+      "type": "Beverage",
+      "price": "2.99$",
+      "shortDescription": "The original Coca-Cola, a classic and refreshing carbonated beverage. Enjoy its iconic taste and satisfying fizz.",
+      "rating": "3",
+      "image": "https://i.ibb.co/p2SX34t/cokeclassic-650x0-padded-fff.jpg",
+      "updateProduct": null
+    },
+    {
+      
+      "productName": "Coca-Cola Cherry",
+      "brandName": "The Coca-Cola Company",
+      "type": "Beverage",
+      "price": "3.55$",
+      "shortDescription": "Coca-Cola Cherry is a delightful twist on the classic cola, featuring a burst of cherry flavor.",
+      "rating": "2",
+      "image": "https://i.ibb.co/6bDQHzv/Cherry-Coca-Cola-330ml-12920.webp"
+    },
+    {
+      
+      "productName": "Big Mac",
+      "brandName": "McDonald's",
+      "type": "Burger",
+      "price": "5.99$",
+      "shortDescription": "The legendary Big Mac is a classic burger with two all-beef patties, special sauce, lettuce, cheese, pickles, and onions on a sesame seed bun.",
+      "rating": "5",
+      "image": "https://i.ibb.co/3phFhgt/big-Burger-1.jpg"
+    },
+    {
+      
+      "productName": "McChicken",
+      "brandName": "McDonald's",
+      "type": "Chicken Burger",
+      "price": "5.66$",
+      "shortDescription": "The McChicken burger features a crispy chicken patty with mayonnaise and lettuce, served on a soft bun.",
+      "rating": "4",
+      "image": "https://i.ibb.co/pzZvwmM/burger-1.jpg"
+    },
+    {
+      
+      "productName": "French Fries",
+      "brandName": "McDonald's",
+      "type": "Side",
+      "price": "2.49$",
+      "shortDescription": "McDonald's classic French Fries are made from the finest potatoes and cooked to golden perfection.",
+      "rating": "4",
+      "image": "https://i.ibb.co/yf9Qnf5/french-Fries-1.jpg"
+    },
+    {
+      
+      "productName": "Cheeze Fries",
+      "brandName": "McDonald's",
+      "type": "Dessert",
+      "price": "1.49$",
+      "shortDescription": "McDonald's Apple Pie is a delicious dessert with warm, flaky pastry and a sweet apple filling.",
+      "rating": "5",
+      "image": "https://i.ibb.co/tx2bJgp/cheeze-Fries-1.jpg",
+      "updateProduct": null
+    },
+    {
+      
+      "productName": "Caramel Macchiato",
+      "brandName": "Starbucks",
+      "type": "Coffee",
+      "price": " 4.99$",
+      "shortDescription": "A rich and creamy Caramel Macchiato with layers of espresso, steamed milk, and caramel syrup.",
+      "rating": "5",
+      "image": "https://i.ibb.co/hHSHnjb/CAH-Caramel-Macch-Ingredient-2880x2880.webp"
+    },
+    {
+      
+      "productName": "Green Tea Latte",
+      "brandName": "PepsiCo",
+      "type": "Tea",
+      "price": "500.79$",
+      "shortDescription": "Starbucks Green Tea Latte is a smooth and creamy matcha delight with steamed milk and a hint of sweetness.",
+      "rating": "4",
+      "image": "https://i.ibb.co/cDwyGf5/Matcha-Latte-001s.webp",
+      "updateProduct": null
+    },
+    {
+      
+      "productName": "Double Chocolate Brownie",
+      "brandName": "Starbucks",
+      "type": "Dessert",
+      "price": "4.49$",
+      "shortDescription": "Indulge in the rich and fudgy delight of the Double Chocolate Brownie, perfect with your favorite coffee.",
+      "rating": "5",
+      "image": "https://i.ibb.co/4KCdswt/Double-Chocolate-Fudge-Brownies-Recipe-recipe-photo-1.jpg"
+    },
+    {
+      
+      "productName": "Iced Caramel Frappuccino",
+      "brandName": "Starbucks",
+      "type": "Frappuccino",
+      "price": "5.98$",
+      "shortDescription": "A refreshing and caramel-infused Frappuccino with whipped cream, perfect for a warm day.",
+      "rating": "5",
+      "image": "https://i.ibb.co/cTkZJPC/starbucks-caramel-frappuccino.webp"
+    },
+    {
+      
+      "productName": "Pepsi",
+      "brandName": "PepsiCo",
+      "type": "Beverage",
+      "price": "4.23$",
+      "shortDescription": "Enjoy the bold and refreshing taste of Pepsi, a classic carbonated cola beverage.",
+      "rating": "5",
+      "image": "https://i.ibb.co/XkQQN3x/social-share.jpg"
+    },
+    {
+      
+      "productName": "Diet Pepsi",
+      "brandName": "PepsiCo",
+      "type": "Beverage",
+      "price": "3.59$",
+      "shortDescription": "Diet Pepsi delivers the same great taste with zero sugar and calories, perfect for those looking for a low-calorie option.",
+      "rating": "4",
+      "image": "https://i.ibb.co/mSCL3nX/1x-1.jpg"
+    },
+    {
+      
+      "productName": "Lay's Classic Potato Chips",
+      "brandName": "PepsiCo",
+      "type": "Snack",
+      "price": "2.32$",
+      "shortDescription": "Lay's Classic Potato Chips are known for their crispiness and savory potato flavor. A timeless snack.",
+      "rating": "5",
+      "image": "https://i.ibb.co/nLV8Gf5/download.jpg"
+    },
+    {
+      
+      "productName": "Tropicana Orange Juice",
+      "brandName": "PepsiCo",
+      "type": "Beverage",
+      "price": "2.99$",
+      "shortDescription": "Tropicana Orange Juice is made from the freshest oranges, providing a burst of natural citrus goodness.",
+      "rating": "4",
+      "image": "https://i.ibb.co/1LQC8Gg/71w-Mr-B2f-MBL.jpg"
+    },
+    {
+      
+      "productName": "Nestlé Crunch Bar",
+      "brandName": "Nestlé",
+      "type": "Chocolate",
+      "price": "3.49$",
+      "shortDescription": "Nestlé Crunch Bar is a delightful combination of creamy milk chocolate and crispy rice crisps for a satisfying crunch.",
+      "rating": "4",
+      "image": "https://i.ibb.co/TmZ28Np/nestle-crunch-copycat-recipe-1.jpg"
+    },
+    {
+      
+      "productName": "Nestlé Pure Life Water",
+      "brandName": "Nestlé",
+      "type": "Beverage",
+      "price": "3.19$",
+      "shortDescription": "Nestlé Pure Life Water offers pure and refreshing hydration, sourced from natural springs for a crisp taste.",
+      "rating": "4",
+      "image": "https://i.ibb.co/0cBZ3Mg/6827400006.webp"
+    },
+    {
+      
+      "productName": "Nestlé Coffee-Mate",
+      "brandName": "Nestlé",
+      "type": "Coffee Additive",
+      "price": "4.45$",
+      "shortDescription": "Nestlé Coffee-Mate is a rich and creamy coffee creamer that enhances the flavor of your favorite brew.",
+      "rating": "5",
+      "image": "https://i.ibb.co/hKy5rCV/10370769-XL1-20210922.webp"
+    },
+    {
+      
+      "productName": "Nestlé Cerelac Baby Cereal",
+      "brandName": "Nestlé",
+      "type": "Baby Food",
+      "price": " 2.99$",
+      "shortDescription": "Nestlé Cerelac Baby Cereal is a nutritious and easy-to-digest food for infants, packed with essential vitamins and minerals.",
+      "rating": "5",
+      "image": "https://i.ibb.co/Lzb9vns/Nestle-Cerelac-Rice-And-Mixed-Vegetables-Non-Brand-551dd-338567.jpg"
+    },
+    {
+      
+      "productName": "Diet Coke",
+      "brandName": "The Coca-Cola Company",
+      "type": "Beverage",
+      "price": "3.69$",
+      "shortDescription": "Diet Coke is a low-calorie cola that delivers the classic taste you love without the added calories.",
+      "rating": "4",
+      "image": "https://i.ibb.co/zHPB97J/Diet-Coke.webp"
+    }
+  ]

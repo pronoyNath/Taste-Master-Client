@@ -8,6 +8,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../../ShareComponents/Navbar/Navbar";
 import { useState } from "react";
 import Footer from "../../Footer/Footer";
+import { GroupLinks } from "../../GroupLinks/GroupLinks";
 
 
 const MainLayout = () => {
@@ -27,11 +28,16 @@ const MainLayout = () => {
                 position="top-center"
                 reverseOrder={false}
             /> */}
-            <div className='max-w-screen-xl mx-auto md:px-4'>
+            <div
+            // className='max-w-screen-xl mx-auto md:px-4'
+            >
                 <Navbar
                     theme={theme} handleTheme={handleTheme}
                 ></Navbar>
                 <Outlet />
+            </div>
+            <div>
+                <GroupLinks />
             </div>
             <div className="mx-auto bg-[#191616] text-center">
                 <Footer></Footer>
