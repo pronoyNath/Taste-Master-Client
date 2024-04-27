@@ -93,7 +93,7 @@ const Register = () => {
     }
 
     return (
-        <div className="w-full mx-auto lg:w-[1200px] shadow-lg  flex items-center justify-between  group text-orange my-20">
+        <div className="w-full mx-auto lg:w-[1200px]   flex items-center justify-between  group text-orange my-20">
             <Toaster />
             <div className="w-1/2 min-h-full  relative overflow-hidden hidden lg:block">
                 <img src="https://i.ibb.co/xsjQh04/log-in.png" alt="" className="" />

@@ -17,20 +17,20 @@ const ProductCard = ({ commonProduct }) => {
                 <motion.div ref={constraintsRef}> <motion.div
                     drag
                     dragConstraints={constraintsRef}
-                    className="cursor-move min-w-[250px] max-w-[350px] space-y-12 rounded-br-lg rounded-tr-lg bg-white p-10 text-center shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)] dark:bg-[#18181B] md:w-[350px] dark:shadow-[0px_2px_8px_0px_rgba(0,0,0,0.8)]"
+                    className="cursor-move min-w-[250px] max-w-[350px] space-y-12 rounded-br-lg rounded-tr-lg  p-10 text-center  bg-[#18181B] md:w-[350px] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.8)]"
                 >
                     <div className="space-y-1">
-                        <h2 className="text-center font-sans text-2xl font-medium text-gray-700 dark:text-white/90 lg:text-3xl">{brandName}</h2>
-                        <p className="font-sans text-gray-500 dark:text-white/70"> {productName}</p>
+                        <h2 className="text-center font-sans text-2xl font-medium text-gray-700 text-white/90 lg:text-3xl">{brandName}</h2>
+                        <p className="font-sans text-gray-500 text-white/70"> {productName}</p>
                     </div>
                     <div className="flex flex-wrap  justify-between">
                         <div className="space-y-1">
-                            <p className="font-sans text-sm text-gray-500 dark:text-white/70">Rating:</p>
-                            <p className="text-lg tracking-wider text-gray-700 dark:text-white/80 lg:text-lg">{rating}</p>
+                            <p className="font-sans text-sm text-gray-500 text-white/70">Rating:</p>
+                            <p className="text-lg tracking-wider text-gray-700 text-white/80 lg:text-lg">{rating}</p>
                         </div>
                         <div className="space-y-1">
-                            <p className="font-sans text-sm text-gray-500 dark:text-white/70">Type:</p>
-                            <p className="text-lg tracking-wider text-gray-700 dark:text-white/80 lg:text-lg">{type.includes(' ') ? (
+                            <p className="font-sans text-sm text-gray-500 text-white/70">Type:</p>
+                            <p className="text-lg tracking-wider text-gray-700 text-white/80 lg:text-lg">{type.includes(' ') ? (
                                 type.split(' ').map((word, index) => (
                                     <React.Fragment key={index}>
                                         {index > 0 && <br />}
@@ -42,8 +42,8 @@ const ProductCard = ({ commonProduct }) => {
                             )}</p>
                         </div>
                         <div className="space-y-1">
-                            <p className="font-sans text-sm text-gray-500 dark:text-white/70">Price:</p>
-                            <p className="text-lg tracking-wider text-gray-700 dark:text-white/80 lg:text-lg">{price}</p>
+                            <p className="font-sans text-sm text-gray-500 text-white/70">Price:</p>
+                            <p className="text-lg tracking-wider text-gray-700 text-white/80 lg:text-lg">{price}</p>
                         </div>
                     </div>
                     <div className='font-semibold text-white text-right'>
@@ -53,10 +53,10 @@ const ProductCard = ({ commonProduct }) => {
                     </div>
                     <div className='flex justify-around'>
                         <Link to={`/details/${_id}`}>
-                            <button className="rounded-full border border-[#0d87f8] px-4 py-2 text-sm text-[#0d87f8] hover:bg-[#0d87f8] hover:text-white  duration-300 dark:hover:bg-transparent dark:hover:text-[#0d87f8] dark:hover:drop-shadow-[0px_0px_2px_#0d87f8]">Details</button>
+                            <button className="rounded-full border border-[#0d87f8] px-4 py-2 text-sm text-[#0d87f8] hover:bg-[#0d87f8]  duration-300 hover:bg-transparent hover:text-[#0d87f8] hover:drop-shadow-[0px_0px_2px_#0d87f8]">Details</button>
                         </Link>
                         <Link to={`/update/${_id}`}>
-                            <button className="rounded-full border border-[#0d87f8] px-4 py-2 text-sm text-[#0d87f8] hover:bg-[#0d87f8] hover:text-white  duration-300 dark:hover:bg-transparent dark:hover:text-[#0d87f8] dark:hover:drop-shadow-[0px_0px_2px_#0d87f8]">update</button>
+                            <button className="rounded-full border border-[#0d87f8] px-4 py-2 text-sm text-[#0d87f8] hover:bg-[#0d87f8]  duration-300 hover:bg-transparent hover:text-[#0d87f8] hover:drop-shadow-[0px_0px_2px_#0d87f8]">update</button>
                         </Link>
                     </div>
                 </motion.div>
